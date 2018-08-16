@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar"
+        app:subtitle="骁骁网(子标题)"
+        app:title="球道木科技(标题)"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:subtitleTextColor="@color/white"
+        app:titleTextColor="@color/white"
+        android:background="@color/colorPrimaryDark"
+        app:subtitleTextAppearance="@style/ToolbarTextAppearanceSubTitle"
+        app:titleTextAppearance="@style/ToolbarTextAppearanceTitle">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="自定义"
+            android:textColor="@color/white"
+            android:textSize="16sp" />
+    </android.support.v7.widget.Toolbar>
+
+</LinearLayout>
