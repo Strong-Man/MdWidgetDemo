@@ -6,13 +6,18 @@
 
     <android.support.v7.widget.Toolbar
         android:id="@+id/toolbar"
+        app:logo="@mipmap/logo"
+        app:contentInsetStart="0dp"
+        app:navigationIcon="@mipmap/menu_icon"
         app:subtitle="骁骁网(子标题)"
         app:title="球道木科技(标题)"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         app:subtitleTextColor="@color/white"
+        app:titleMarginStart="30dp"
         app:titleTextColor="@color/white"
         android:background="@color/colorPrimaryDark"
+        app:popupTheme="@style/ToolbarTheme"
         app:subtitleTextAppearance="@style/ToolbarTextAppearanceSubTitle"
         app:titleTextAppearance="@style/ToolbarTextAppearanceTitle">
 
