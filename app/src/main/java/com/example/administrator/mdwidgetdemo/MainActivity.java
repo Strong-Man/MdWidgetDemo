@@ -7,7 +7,7 @@ import android.view.View;
 import android.widget.Button;
 
 public class MainActivity extends AppCompatActivity {
-    Button mGoToolbarBtn;
+    Button mGoToolbarBtn, mGoDrawerBtn;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -18,11 +18,20 @@ public class MainActivity extends AppCompatActivity {
 
     private void init(){
         mGoToolbarBtn = findViewById(R.id.go_toolbar);
+        mGoDrawerBtn = findViewById(R.id.go_drawer);
 
         mGoToolbarBtn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 Intent intent = new Intent(MainActivity.this, ToolbarAct.class);
+                startActivity(intent);
+            }
+        });
+
+        mGoDrawerBtn.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(MainActivity.this, DrawerAct.class);
                 startActivity(intent);
             }
         });
