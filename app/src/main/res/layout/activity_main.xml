@@ -9,7 +9,16 @@
 
     <Button
         android:id="@+id/go_toolbar"
-        android:text="ToolbarDemo"
+        android:text="Toolbar_Demo"
+        android:textSize="16sp"
+        android:gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="46dp" />
+
+
+    <Button
+        android:id="@+id/go_drawer"
+        android:text="Drawer_Demo"
         android:textSize="16sp"
         android:gravity="center"
         android:layout_width="match_parent"

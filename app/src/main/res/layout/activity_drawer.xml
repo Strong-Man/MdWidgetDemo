@@ -1,25 +1,59 @@
 <?xml version="1.0" encoding="utf-8"?>
-<android.support.v4.widget.DrawerLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:tools="http://schemas.android.com/tools"
-    android:id="@+id/drawer_layout"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:fitsSystemWindows="true"
-    tools:openDrawer="start">
+    android:orientation="vertical">
 
-    <include
-        layout="@layout/app_bar_drawer"
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar"
+        app:logo="@mipmap/logo"
+        app:contentInsetStart="0dp"
+        app:navigationIcon="@mipmap/menu_icon"
+        app:subtitle="骁骁网(子标题)"
+        app:title="球道木科技(标题)"
         android:layout_width="match_parent"
-        android:layout_height="match_parent" />
+        android:layout_height="wrap_content"
+        app:subtitleTextColor="@color/white"
+        app:titleMarginStart="30dp"
+        app:titleTextColor="@color/white"
+        android:background="@color/colorPrimaryDark"
+        app:popupTheme="@style/ToolbarTheme"
+        app:subtitleTextAppearance="@style/ToolbarTextAppearanceSubTitle"
+        app:titleTextAppearance="@style/ToolbarTextAppearanceTitle">
 
-    <android.support.design.widget.NavigationView
-        android:id="@+id/nav_view"
-        android:layout_width="wrap_content"
-        android:layout_height="match_parent"
-        android:layout_gravity="start"
-        android:fitsSystemWindows="true"
-        app:headerLayout="@layout/nav_header_drawer"
-        app:menu="@menu/activity_drawer_drawer" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="自定义"
+            android:textColor="@color/white"
+            android:textSize="16sp" />
+    </android.support.v7.widget.Toolbar>
 
-</android.support.v4.widget.DrawerLayout>
+    <android.support.v4.widget.DrawerLayout
+        android:id="@+id/drawer_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:text="假装这里有内容" />
+        </LinearLayout>
+
+        <android.support.design.widget.NavigationView
+            android:id="@+id/nav_view"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_gravity="start"
+            android:fitsSystemWindows="true"
+            app:headerLayout="@layout/nav_header_drawer"
+            app:menu="@menu/activity_drawer_drawer" />
+    </android.support.v4.widget.DrawerLayout>
+</LinearLayout>
