@@ -16,8 +16,12 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-
-        <activity android:name=".ToolbarAct"/>
+        <activity android:name=".ToolbarAct" />
+        <activity android:name=".BehaviorAct" />
+        <activity
+            android:name=".DrawerAct"
+            android:label="@string/title_activity_drawer"
+            ></activity>
     </application>
 
 </manifest>
